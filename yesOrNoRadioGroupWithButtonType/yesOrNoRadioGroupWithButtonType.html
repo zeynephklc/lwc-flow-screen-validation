@@ -1,0 +1,30 @@
+<template>
+<div>
+<lightning-radio-group name="Group1"
+                        label="DID THESE ARTICLES SOLVE YOUR PROBLEM?"
+                        options={options}
+                        value={value}
+                        onchange={handleChange}
+                        required
+                        type="button"
+                        class="validate">
+</lightning-radio-group>
+</div>
+<br>
+<div>
+<lightning-radio-group name="Group2"
+                    label="DO YOU WANT TO PROCEED WITH CREATING A CASE?"
+                    options={options2}
+                    value={value}
+                    onchange={handleChange2}
+                    required
+                    type="button"
+                    class="validate">
+</lightning-radio-group>
+</div>
+<br>
+<h1>TEST</h1>
+<h1>{selectedOption}</h1>
+<h1>{selectedOption2}</h1>
+<h1>{buttonSelection}</h1>
+</template>
